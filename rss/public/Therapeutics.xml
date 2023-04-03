@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://techtransfer.cancer.gov/rss/diagnostics/abstracts.xml">
+  <channel>
+    <title>Therapeutics</title>
+    <link>http://www.example.com</link>
+    <description>Available Technologies from the Technology Transfer Center.</description>
+    <language/>
+    <atom:link href="http://www.example.com" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>A Human Monoclonal Antibody Against Deacetylated PNAG for Use as an Antimicrobial Agent</title>
+      <link>http://default/bundle/nci-e-075-2022</link>
+      <description>&lt;p&gt;Biofilms are complex microbial communities, surface attached and held together by self-produced polymer matrices.  These matrices are mainly composed of polysaccharides, secreted proteins and nucleic acids.  Poly-N-acetyl glucosamine (PNAG) is a highly conserved surface polysaccharide expressed by a range of bacterial, fungal and protozoan microorganisms. It is associated with microbial biofilm formation.  Partial deacetylation of PNAG (dPNAG) is critical for the function of PNAG in biofilm formation and required for the structural development and integrity of biofilm.  Antibodies to PNAG and/or dPNAG have significant potential as broad-spectrum therapeutics for a range of bacterial and fungal infections.  Research suggests that dPNAG is a better target than PNAG for antibody-based therapeutics; however, identification of dPNAG antibodies has been challenging.  &lt;/p&gt;
+&lt;p&gt;Researchers at the National Cancer Institute (NCI) identified a human antibody, denoted TG10, that selectively binds to dPNAG with potential as a novel antimicrobial agent.  F598, a human IgG1 monoclonal antibody (mAb) which binds to both PNAG and dPNAG, is in active development as a potential antimicrobial agent in clinical trials.  The novel antibody TG10 binds to a different location on the biofilm and shows synergistic effects when administered in combination with F598.  The TG10 antibody has been tested both in vitro and in vivo and shows good efficacy both alone and in combination with F598.  &lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-075-2022</guid>
+    </item>
+    <item>
+      <title>FIBP Knockout Potentiates Therapeutic Effects of T-cell Based Therapies in Solid Tumors</title>
+      <link>http://default/bundle/nci-e-165-2021</link>
+      <description>&lt;p&gt;Despite recent breakthroughs in cancer immunotherapy, T-cell based therapies achieve limited efficacy in solid tumors. Immunosuppression, antigen escape and physical barriers to entry into solid tumors are issues faced. Identifying regulators in T-cell dysfunction remains challenging due to limitations of current screening platforms. &lt;/p&gt;
+&lt;p&gt;Using single-cell transcriptomic data from tumors as input, researchers at the National Cancer Institute’s Cancer Data Science Laboratory developed a computational model of T-cell resilience called “Tres” to search for gene markers of T cells that allow T cell proliferation in the immunosuppressive tumor microenvironments. Integrating 36 single-cell transcriptomic cohorts, covering 168 tumors from 19 tumor types, researchers identified acidic fibroblast growth factor intracellular-binding protein (FIBP) as a top regulator of T-cell resilience. Knocking out FIBP in murine and human donor T cells significantly enhanced the efficacy of T-cell mediated killing of in vitro cancer cell lines and adoptive cell therapy in a mouse model. Mechanistically, FIBP knockout in CD8 lymphocytes alleviated T-cell dysfunction by limiting cholesterol metabolisms, a recognized factor to inhibit T-cell activity. In summary, targeting FIBP in T cells is a novel approach to enhance the efficacy of adoptive cell therapy in solid tumors. &lt;/p&gt;
+&lt;p&gt;The National Cancer Institute seeks partners to license and/or co-develop this technology towards commercialization.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-165-2021</guid>
+    </item>
+    <item>
+      <title>Immunotherapy Combination Treatment Containing both TLR4 and TLR2/6 Agonists, a Checkpoint Inhibitor, and a STING agonist.</title>
+      <link>http://default/bundle/nci-e-181-2021</link>
+      <description>&lt;p&gt;Melanoma is an aggressive form of skin cancer that commonly becomes metastatic, spreading to nearby tissue or other parts of the body, including distant skin or subcutaneous sites such as the lungs, liver, brain, or bone. Metastatic melanoma is very drug resistant and difficult to treat, and therefore, the prognosis for these patients is poor. There is a need for effective therapies for aggressive melanoma and other drug-resistant solid cancers. &lt;/p&gt;
+&lt;p&gt;In recent years, a lot of scientific interest has focused on using the innate immune response to treat cancer. Toll-like receptors (TLRs) are a class of proteins that play a crucial role in the innate immune system. TLRs have also been shown to play a role in angiogenesis (developing new blood vessels) and are expressed in cancer cells, including melanoma cells. TLR agonists have been evaluated extensively in cancer immunotherapy for use as adjuvants due to their ability to activate immune cells and promote inflammation. The activation of TLRs expressed on the surface of dendritic cells (DCs) induces the production of proinflammatory cytokines, resulting in an active antitumor immune response. &lt;/p&gt;
+&lt;p&gt;Researchers at the National Cancer Institute (NCI) developed a combination of agents capable of treating cancers such as resistant melanin producing M3 melanoma. This combination consists of administering:&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;A Toll-like receptor (TLR) 4 agonist (i.e., HMGN1);&lt;/li&gt;
+&lt;li&gt;A TLR2/6 agonist (i.e., FSL-1);&lt;/li&gt;
+&lt;li&gt;An immune checkpoint inhibitor (e.g., PD-L1 inhibitor, a PD-1 inhibitor, a TNFR-2 inhibitor);&lt;/li&gt;
+&lt;li&gt;A STING agonist (such as cGAMP or c-di-GMP).&lt;/li&gt;
+&lt;/ol&gt;&lt;p&gt;The researchers showed that HMGN1 and FSL-1 synergize to activate human and mouse dendritic cells (DCs). HMGN1 and FSL-1 upregulate the cytokine production by DCs resulting in the polarization of Th1 immune responses. This immune activating effect, in combination with an immune checkpoint inhibitor (anti-PD-L1) to diminish tumor-associated immunosuppression, had promising effects on treating mice bearing melanin-producing melanomas but was not completely curative. However, when additionally combined with cGAMP, a STING agonist to further boost the immune activating effects, the researchers saw a curative rate of 100% in the resistant melanin producing M3 melanoma in mice. Therefore, this combination provides a new therapeutic approach for curing resistant melanin-producing melanoma tumors, and possibly other types of resistant solid tumors, without the need to identify and use relevant protective tumor antigens. &lt;/p&gt;
+&lt;p&gt;Development of this combination therapeutic approach continues and is available for licensing and co-development.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-181-2021</guid>
+    </item>
+    <item>
+      <title>Novel Small Molecule Inhibitors of Tyrosyl-DNA Phosphodiesterase 1 (TDP1) for Treatment of Solid Tumors</title>
+      <link>http://default/bundle/nci-e-256-2020</link>
+      <description>&lt;p&gt;Topoisomerase 1 (TOP1) is an essential enzyme that plays a critical role in DNA transcription and replication. TOP1 inhibitors are a known class of anti-cancer agents that work to interrupt DNA replication in cancer cells, causing cell death. Since the discovery of the TOP1 inhibitor camptothecin (CPT) from plant extracts more than 60 years ago, two CPT analogs (irinotecan and topotecan) were approved by the FDA for cancer treatment. Tyrosyl-DNA phosphodiesterase 1 (TDP1) is an enzyme involved in DNA repair created when TOP1 is inhibited. As a result, targeting TDP1 is considered a potential therapeutic approach to enhance and possibly synergize the potency of TOP1 inhibitors. While TOP1 inhibitors are widely used to treat solid tumors – such as colon, lung, ovarian and certain pediatric cancers – there are currently no drugs targeting TDP1. Many TDP1 inhibitors may potentially have mechanisms of action that are promiscuous and non-specific. Researchers at the NCI developed a series of novel compounds selectively targeting the catalytic domain of TDP1. These small molecules show low micromolar potency against TDP1. X-ray structures of TDP1 bound to some of the small molecules elucidated their catalytic binding modes. The compounds developed at the NCI show selectivity for TDP1 over TDP2.&lt;/p&gt;
+&lt;p&gt;The NCI seeks proposals from parties interested in licensing and/or co-development for commercializing the use of TDP1 inhibitors as part of a potent and selective anti-cancer combination therapy.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-256-2020</guid>
+    </item>
+    <item>
+      <title>T Cell Receptors Targeting CDKN2A Mutations for Cancer Immunotherapy</title>
+      <link>http://default/bundle/nci-e-206-2022</link>
+      <description>&lt;p&gt;Cyclin-dependent kinase inhibitor 2A gene, also known as CDKN2A, is a tumor suppressor gene and is commonly inactivated through somatic mutations in many human cancers. For example, inactivation of CDKN2A is highly prevalent in melanoma, gastrointestinal and pancreatic cancers. Through germline mutations, CDKN2A is associated with predisposition for a variety of cancers, including melanoma and pancreatic cancers. Despite the high frequency of CDKN2A mutations in cancer, there have been no successful therapies targeting these mutations to date. Adoptive cell therapy, a promising form of immunotherapy, offers a potential form of targeted therapy for cancers with CDKN2A mutations.&lt;/p&gt;
+&lt;p&gt;Researchers at the National Cancer Institute (NCI) have developed seven novel human T cell receptors (TCRs) targeting CDKN2A. These TCRs may be used in adoptive cell therapy to treat cancers driven by CDKN2A mutations by targeting neoantigens expressed only by cancer cells. More specifically, the TCRs target neoantigens driven by frameshifts and those driven by nonsynonymous mutations that result in a proline to leucine in position 114 in the CDKN2A gene. Together, these account for 53% of CDKN2A mutations. The TCRs are restricted by some of the most common HLA alleles including HLA A*03:01, HLA A*11:01 and HLA A*02:01, which have an approximate frequency of 8%, 7%, and 40% respectively within the United States population. Thus, these TCRs allow for engineering TCR-based therapies resulting in specific elimination of tumor cells with the indicated CDKN2A mutations present in a diverse group of cancer patients.&lt;/p&gt;
+&lt;p&gt;The NCI seeks parties interested in research co-development and/or licensing this library of TCRs targeting CDKN2A mutations.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-206-2022</guid>
+    </item>
+    <item>
+      <title>T Cell Receptors Targeting BRAF V600E Mutation for Cancer Immunotherapy</title>
+      <link>http://default/bundle/nci-e-213-2022</link>
+      <description>&lt;p&gt;BRAF is an oncogene that encodinges a serine-threonine kinase (B-Raf kinase) important in regulating cell growth and differentiation. Spontaneous mutations in the BRAF gene allow cells to continuously divide, leading to the development of cancer. A substitution of glutamic acid for valine at amino acid number 600 (designated V600E) accounts for 90% of BRAF mutations and is a driver of many cancers. The V600E mutation is present in ~3% of all cancer cases, representing a patient population of 540,000 patients per year. Though While the V600E mutation is found in a wide variety of cancers, it ishas a particularly high prevalentce in metastatic melanoma, colorectal cancer, thyroid cancer, and lung cancer. Many of these cancers are aggressive and the V600E mutation is commonly recognized as a poor prognostic factor. Therapies for these cancers are often nonspecific or limited by acquired resistance, necessitating novel therapeutic approaches specifically targeting the BRAF V600E mutation. &lt;/p&gt;
+&lt;p&gt;Researchers at the National Cancer Institute (NCI) have identified two T cell receptors (TCRs) that target the BRAF V600E mutation. These TCRs specifically recognize tumor cells expressing the BRAF V600E mutation when presented by HLA-A*0301 molecules. The TCRs were identified by first using mass spectrometric analysis to isolate a short peptide derived from the BRAF V600E mutated protein that binds to HLA-A*0301. Transgenic mice harboring the HLA-A*0301 allele were then immunized with the peptide to obtain T cells recognizing the BRAF V600E mutation. The two TCRs were isolated from these T cells and tested in vitro for efficacy. Genetically engineered human T cells transduced with the TCRs were specifically reactive against multiple human tumor cell lines harboring the BRAF V600E mutation. These encouraging preclinical results suggest the potential for the TCRs to be used in a therapeutic approach such as T-cell therapy against cancers with the BRAF V600E mutation. Given the broad distribution of the V600E mutation across cancers, the TCRs are also an attractive candidate for allogeneic T-cell therapy among cancer patients with the HLA-A*0301 allele.&lt;/p&gt;
+&lt;p&gt;The NCI seeks parties interested in research co-development and/or licensing of these HLA-A*0301 restricted TCRs that target the BRAF V600E mutation.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-213-2022</guid>
+    </item>
+    <item>
+      <title>Single Domain Antibodies Targeting the S2 Subunit of SARS-CoV-2 Spike Protein</title>
+      <link>http://default/bundle/nci-e-204-2021</link>
+      <description>&lt;p&gt;The COVID-19 pandemic is a worldwide public health crisis with over 100 million confirmed cases and 2.4 million deaths as of February 2021. COVID-19 is caused by a novel coronavirus called SARS-CoV-2. Almost all the neutralizing antibodies targeting SARS-CoV-2 that are in development recognize the receptor binding domain (RBD) on the spike (S) protein. Blocking the interaction of RBD and the ACE2 receptor on human cells is the first of the two critical steps for neutralization of the virus. However, the S2 subunit of the spike is also critical for viral infection and entry into human cells. It is highly conserved across many coronaviruses, including other SARS-CoV-2 like viruses. To date there are no antibodies targeting the S2 subunit.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-204-2021</guid>
+    </item>
+    <item>
+      <title>Neoantigen T Cell Therapy with Neoantigen Vaccination as a Combination Immunotherapy Against Cancer</title>
+      <link>http://default/bundle/nci-e-046-2022</link>
+      <description>&lt;p&gt;Adoptive cell therapy (ACT) is a breakthrough form of cancer immunotherapy that utilizes autologous, antitumor T cells to attack tumors through recognition of tumor-specific mutations, or neoantigens. A major hurdle in the development of ACT is the exhausted phenotype exhibited by many neoantigen-specific T cells, which limits their efficacy and prevents a sustained immune response. &lt;br /&gt;
+	Researchers at the National Cancer Institute (NCI) have developed a combination immunotherapy to rescue the function of exhausted, neoantigen-specific T cells and, thus, enhance ACT. The method involves concurrent administration of neoantigen-specific T cells alongside a vaccine targeting the same neoantigens. The antitumor effect of this combination immunotherapy is superior to that mediated by the vaccine or by ACT alone, as measured in vivo by overall survival and tumor regression. Patient T cells genetically engineered with a neoantigen-specific T-cell receptor (TCR) can also be synergistically enhanced when used alongside a vaccine targeting the same antigen in this combination immunotherapy. This combined immunotherapy approach has broad therapeutic potential in a wide range of metastatic cancers, particularly those that are not responsive to traditional treatment methods.&lt;br /&gt;
+	The NCI seeks parties interested in research co-development and/or licensing of this combination immunotherapy approach of neoantigen-specific T cells administered alongside a neoantigen-targeting vaccine to enhance ACT and treat cancer.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-046-2022</guid>
+    </item>
+    <item>
+      <title>Formulation of a Modified Stable FGF-1 (TTHX1114) to Accelerate Corneal Endothelium Regeneration</title>
+      <link>http://default/tech/tab-3584</link>
+      <description>This technology includes the use of a novel formulation for an engineered version of Fibroblast Growth Factor 1 (FGF1), TTHX1114, that can be used to accelerate regeneration of the corneal endothelium after surgical lesions. FGFs are well-established regulators of migration and proliferation of corneal endothelial cells (CECs).</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/TAB-3584</guid>
+    </item>
+    <item>
+      <title>Treatment of primary hyperoxalurias with small molecule lactate dehydrogenase inhibitors such as WO2018005807A1</title>
+      <link>http://default/tech/tab-3582</link>
+      <description>This technology includes the use of novel lactate dehydrogenase (LDH) inhibitors, including WO2018005807A1, for the treatment of primary hyperoxalurias (PHs). PHs are rare autosomal recessive disorders caused by overproduction of oxalate, leading to recurrent calcium oxalate kidney stone disease, and in some cases end-stage renal disease. One potential strategy to treat PHs is to reduce the production of oxalate by diminishing the activity of LDH, the proposed key enzyme responsible for converting glyoxylate to oxalate. Biochemical and cell-based assays were used to identify and characterize novel potent inhibitors of LDH that prevent the conversion of glyoxylate to oxalate.</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/TAB-3582</guid>
+    </item>
+  </channel>
+</rss>

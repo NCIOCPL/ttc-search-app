@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://techtransfer.cancer.gov/rss/diagnostics/abstracts.xml">
+  <channel>
+    <title>Software and Apps</title>
+    <link>http://www.example.com</link>
+    <description>Available Technologies from the Technology Transfer Center.</description>
+    <language/>
+    <atom:link href="http://www.example.com" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Biomarker Analysis Software for High-Throughput Diagnostic Multiplex Data</title>
+      <link>http://default/bundle/nci-e-105-2018</link>
+      <description>&lt;p&gt;Extracellular vesicles (EVs) are lipid bilayer-enclosed particles that are released from cells. EVs may contain proteins derived from their cells of origin with the potential as diagnostic biomarkers indicating the state of the cells when released. However, due to their small size (50-1000nm), the methods currently used to phenotype EVs have limited sensitivity and scale. A need exists for development of novel technologies improving EV detection and phenotyping.&lt;/p&gt;
+&lt;p&gt;National Cancer Institute (NCI) scientists have developed a software package to perform high-throughput multi-dimensional analysis of EVs. The software utilizes a multiplex bead-based approach, coupled with secondary markers, clinical data, and -omics data. This technology provides a mechanism for high-throughput, semi-automated multidimensional data analysis for potential diagnostic and prognostic outcomes. The inventors used the software to identify and visualize a broad range of EV subsets, while also indirectly measuring specific EV populations. Exploratory studies confirmed strong correlations of liquid biopsy EV repertoires with tumor burden and responses to treatment. Furthermore, this software allows a scalable method of using EVs as biomarkers in a highly multiplexed fashion. When coupled with other clinical data, it is a useful means of diagnostic and/or prognostic outcomes.&lt;/p&gt;
+&lt;p&gt;The NCI seeks research co-development partners and/or licensees for a biomarker analysis software for high-throughput diagnostic multiplex data.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-105-2018</guid>
+    </item>
+    <item>
+      <title>Denoising of Dynamic Magnetic Resonance Spectroscopic Imaging Using Low Rank Approximations in the Kinetic Domain</title>
+      <link>http://default/bundle/nci-e-063-2017</link>
+      <description>&lt;p&gt;Accurate measurement of low metabolite concentrations produced by medically important enzymes is commonly obscured by noise during magnetic resonance imaging (MRI). Measuring the turnover rate of low-level metabolites can directly quantify the activity of enzymes of interest, including possible drug targets in cancer and other diseases. Noise can cause the in vivo signal to fall below the limit of detection. A variety of denoising methods have been proposed to enhance spectroscopic peaks, but still fall short for the detection of low-intensity signals. Dynamic nuclear polarization (DNP) is one method that has been critical for boosting weak signals. DNP must be performed near zero absolute temperature, requiring high operating costs. Measurements are limited to imaging immediately after tracer injection, limiting the range of injectable tracers that can be used in vivo. &lt;br /&gt;
+	To address these issues, scientists at the National Cancer Institute (NCI) and National Institute of Neurological Disorders and Stroke (NINDS) have invented a unique method for measuring low-abundance metabolites in vivo which does not rely on frequency or spatial domains – but instead works in the kinetic domain. Data processing structure is simpler. True weak spectroscopic peaks can be more easily distinguished from noise. This technology improves the signal-to-noise ratio by an order of magnitude or more and has already been tested in vivo. The denoising software enhances low-metabolic signal without the need for DNP, which was previously thought impossible. The method makes MRI more informative for determining the metabolic activity of key enzymes in serious pathologies, is more dynamic in the range of tracers that can be used, and is generally less expensive. This software is also highly adaptable as it can be added as a plug-in to already existing MRI processing software. &lt;br /&gt;
+	The scientists seek co-development parties and/or licensees for their invention.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-063-2017</guid>
+    </item>
+    <item>
+      <title>Mitotic Figures Electronic Counting Application for Surgical Pathology</title>
+      <link>http://default/bundle/nci-e-097-2019</link>
+      <description>&lt;p&gt;Cancer diagnosis depends on the assessment of patient biopsies to determine tumor type, grading, and stage of malignancy. Pathologists visually review specimens and count mitotic figures (MF) in a variety of cancer types to help gauge aggressiveness, guide treatment, and inform patient prognosis. Current technology for recording MF counts in surgical pathology is lacking in objectivity, and enumeration of MF by microscopy can be error prone. In particular, a lack of systematic means for recording contributes to recognized variability. Cell counting instruments have been employed in the field as an attempt to address these issues. However, these instruments were not designed to assess the mitotic activity index for tumor grading, and they do not record MF microscopy field-of-view by field-of-view, do not function to sum the counts, and do not export data for inclusion in a pathology report.&lt;/p&gt;
+&lt;p&gt;This discovery provides a software application for the electronic recording, summation, and transcription of clinical data obtained during surgical pathology examination of patient tissues. This invention will enable standardization across diagnostic centers which will permit harmonization of MF counting by electronic means. Through standardization enabled by the application, interobserver variance in MF counting can be reduced and transcription errors eliminated, enhancing the accuracy of mitotic index generation that will improve patient care.&lt;/p&gt;
+&lt;p&gt;The National Cancer Institute (NCI) &lt;a href="https://ccr.cancer.gov/laboratory-of-cancer-biology-and-genetics" rel="nofollow"&gt;Laboratory of Cancer Biology and Genetics&lt;/a&gt; is seeking parties interested in licensing and /or co-development research collaboration of this technology for commercialization in quantitative and digital pathology fields.  &lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-097-2019</guid>
+    </item>
+    <item>
+      <title>Automated Cancer Diagnostic Tool of Detecting, Quantifying and Mapping Mitotically-Active Proliferative Cells in Tumor Tissue Histopathology Whole-Slide Images</title>
+      <link>http://default/bundle/nci-e-038-2019</link>
+      <description>&lt;p&gt;Cancer diagnosis is based on the assessment of patient biopsies to determine the tumor type, grade, and stage of malignancy. The proliferative potential of tumors correlates to their growth and metastasis. Visually identifying and quantifying mitotic figures (MF) in cancer biopsy tissue can be used as a surrogate for proliferative activity in tumors. The manual examination and quantification of stained tissue sections to determine tumor areas with the greatest number of MF, known as mitotic hotspots (HS), is subjective because the current method of assessment is based on the skill of the examining pathologist. In addition, the method used to determine HS is tedious, time-consuming, and error prone due to inter- and intra-observer variability. A newly developed technology addresses the issue of standardizing the assessment of tumor cell proliferation, yielding a diagnostic tool improves medical decision making and diagnostic precision.&lt;/p&gt;
+&lt;p&gt;This software tool identifies all tumor cell proliferating areas, maps foci in relation to the tumor tissue, and quantifies the proliferating cells for grading purposes. It provides MF metrics as a surrogate for tumor proliferative activity while also providing topographic information on HS locations. This new technology is a major improvement over current methods that use visual inspection and counting, which can result in the inclusion of erroneous findings during cancer grading. The software uses a computational approach by processing digital whole slide images (WSI) to render image grid tiles to extract immunolabeled MF and map the HS’s topographically to the tissue section of the WSI. This technology has demonstrated highly reproducibility unaffected by diagnostic skill level or work-fatigue. The automated approach represents a technology that requires minimal computational operations on image tile-based processing – while providing low complexity and enhancements in determining HS.&lt;/p&gt;
+&lt;p&gt;The National Cancer Institute (NCI) &lt;a href="https://ccr.cancer.gov/Laboratory-of-Pathology" rel="nofollow"&gt;Laboratories of Pathology&lt;/a&gt; and &lt;a href="https://ccr.cancer.gov/Laboratory-of-Cancer-Biology-and-Genetics" rel="nofollow"&gt;Cancer Biology and Genetics&lt;/a&gt; are seeking parties interested in licensing and/or partnering in co-development research of this technology for commercialization in the field of clinical immunohistochemistry quantification.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-038-2019</guid>
+    </item>
+    <item>
+      <title>Computer-Aided Diagnostic for Use in Multiparametric MRI for Prostate Cancer</title>
+      <link>http://default/bundle/nci-e-183-2016</link>
+      <description>&lt;p&gt;Multiparametric MRI improves image detail and prostate cancer detection rates compared to standard MRI. Computer aided diagnostics (CAD) used in combination with multiparametric MRI images may further improve prostate cancer detection and visualization. The technology, developed by researchers at the National Institutes of Health Clinical Center (NIHCC), is an automated CAD system for use in processing and visualizing prostate lesions on multiparametric MRI images. The system uses specialized algorithms (an ensemble of multiple random decision tress, Random Forest) that is trained against: 1) hand drawn contours, 2) recorded biopsy results, and 3) normal cases from randomly sampled patient images weighted for lesion size. This CAD system produces a more accurate probability map of potential cancerous lesions in multiparametric MRI images.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;In addition, the CAD system may be used in several applications and settings including, but not limited to: 1) cloud-based prostate cancer screening, 2) use in under-resourced clinical settings with few or underexperienced radiologists, 3) integration into a work station or a picture archiving and communication system (PACS), 4) or serve as standalone software to be used on existing systems. This technology is currently available for licensing and co-development partnerships.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-183-2016</guid>
+    </item>
+    <item>
+      <title>Optical Microscope Software for Breast Cancer Diagnosis</title>
+      <link>http://default/bundle/nci-e-286-2012</link>
+      <description>&lt;p&gt;The successful treatment of cancer is correlated with the early detection of the cancerous cells. Conventional cancer diagnosis is largely based on qualitative morphological criteria, but more accurate quantitative tests could greatly increase early detection of malignant cells. It has been observed that the spatial arrangement of DNA in the nucleus is altered in cancer cells in comparison to normal cells. Therefore, it is possible to distinguish malignant cells by mapping the position of labeled marker genes in the nucleus.&lt;/p&gt;
+&lt;p&gt;	Researchers from NCI and Rudgers University developed  methods of detecting abnormal cells in a sample using the spatial position of one or more genes within the nucleus of a cell, as well as a kit for detecting abnormal cells using such methods. The invention also provides methods of identifying gene markers for abnormal cells using the spatial position of one or more genes within the nucleus of a cell. The application is called PAGODA: Parallel annotation genome organization diagnosis software for breast cancer:&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-286-2012</guid>
+    </item>
+    <item>
+      <title>3D Image Rendering Software for Biological Tissues</title>
+      <link>http://default/bundle/nci-e-254-2012</link>
+      <description>&lt;p&gt;Available for commercial development is software that provides automatic visualization of features inside biological image volumes in 3D. The software provides a simple and interactive visualization for the exploration of biological datasets through dataset-specific transfer functions and direct volume rendering. The method employs a K-Means++ clustering algorithm to classify a two-dimensional histogram created from the input volume. The classification process utilizes spatial and data properties from the volume. Then using properties derived from the classified clusters, the software automatically generates color and opacity transfer functions and presents the user with a high quality initial rendering of the volume data.  The user input can be incorporated through a simple yet intuitive interface for transfer function manipulation included in our framework. Our new interface helps users focus on feature space exploration instead of the usual effort intensive, low-level manipulation.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-254-2012</guid>
+    </item>
+    <item>
+      <title>Video Monitoring and Analysis System for Vivarium Cage Racks</title>
+      <link>http://default/bundle/nci-e-090-2013</link>
+      <description>&lt;p&gt;This invention pertains to a system for continuous observation of rodents in home-cage environments with the specific aim to facilitate the quantification of activity levels and behavioral patterns for mice housed in a commercial ventilated cage rack.  The home-cage in-rack provides daytime and nighttime monitoring with the stability and consistency of a home cage environment. The system is made up of a dual-video camera hardware design mounted on a video rack and an executable software means for automatic detection and processing for tracking multiple animals. The &lt;a href="https://ccr.cancer.gov/Radiation-Biology-Branch" target="_blank" rel="nofollow"&gt;National Cancer Institute’s Radiation Biology Branch&lt;/a&gt; seeks partners interested in licensing or collaborative research to co-develop a video monitoring system for laboratory animals.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-090-2013</guid>
+    </item>
+    <item>
+      <title>Software for Accurate Segmentation of Cell Nuclei in Breast Tissue</title>
+      <link>http://default/bundle/nci-e-106-2010</link>
+      <description>&lt;p&gt;The Office of the Director, National Cancer Institute is seeking statements of capability or interest from parties interested in collaborative research (using the Cooperative Research and Development Agreement (CRADA) or Material Transfer Agreement (MTA) to further develop, evaluate, or commercialize the software for accurate segmentation of cell nuclei and FISH signals in tissue sections.  Collaborators working in the field of quantitative and automated pathology may be interested.&lt;/p&gt;
+&lt;p&gt;Automatic segmentation of cell nuclei is critical in several high-throughput cytometry and pathology applications (1), such as spatial analysis of genetic loci by fluorescence in situ hybridization ("FISH"), whereas manual segmentation is laborious (2). Current automated segmentation methods have varying performance in the presence of distortions introduced during sample preparation, non-uniform illumination, clustering of the individual objects of interest (cells or cell nuclei), and seldom assess boundary accuracy.&lt;/p&gt;
+&lt;p&gt;Researchers at the National Cancer Institute-Frederick, NIH, have developed an automatic algorithm to segment cell nuclei (3) and FISH signals from two-dimensional images of breast tissue. This automated system integrates a series of advanced image processing methods to overcome the delays inherent to current manual methods for segmenting (delineating) individual cell nuclei in tissue samples.  The system automatically selects a subset of nuclei that with high likelihood are accurately segmented. This system has been validated using both simulated and actual datasets that have been accurately analyzed by manual methods.  The system generalizes to independent analysis of many spatial parameters useful for studying spatial gene positioning in interphase nuclei, and potentially has a wide range of diagnostic pathology, cytological and high throughput screening applications.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-106-2010</guid>
+    </item>
+    <item>
+      <title>Software for Modeling Delivery and Penetration of Antibody Conjugates</title>
+      <link>http://default/bundle/nci-e-060-2012</link>
+      <description>&lt;p&gt;The National Cancer Institute (NCI) seeks parties to license software for modeling the targeted delivery of anti-cancer agents in solid tumors.&lt;/p&gt;
+&lt;p&gt;The software models the permeability and concentration of intravenously administered antibody anti-cancer agent conjugates in solid tumors.  The models can be used to determine optimal dosing regimen of a therapeutic in a particular cancer type.  Thirty factors that affect delivery rates and efficiencies are analyzed as variables in generating the models.&lt;/p&gt;</description>
+      <pubDate/>
+      <dc:creator>Anonymous</dc:creator>
+      <guid isPermaLink="false">http://www.example.com/NCI-E-060-2012</guid>
+    </item>
+  </channel>
+</rss>
