@@ -1,3 +1,10 @@
+This repo contains two pieces of the Tech Transfer site's abstract search:
+
+1. The app folder contains a wrapper application that embed's the OTT search widget on the page.
+2. The rss folder contains a maintenance script that will create RSS files for the TTC site
+
+Original readme.md below:
+
 ## Vanilla JS Site
 
 ### Requirements
