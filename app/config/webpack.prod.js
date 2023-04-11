@@ -55,9 +55,9 @@ module.exports = merge(common, {
 	optimization: {
 		minimize: true,
 		minimizer: [new CssMinimizerPlugin(), '...'],
-		runtimeChunk: {
+		/*runtimeChunk: {
 			name: 'runtime',
-		},
+		},*/
 	},
 	performance: {
 		hints: false,
