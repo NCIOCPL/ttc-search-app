@@ -17,6 +17,7 @@
 		</li>
 	</ol>
 	<div id="app-root"></div>
+	<h1 id="title-tag"></h1>
 	<script>
 		(function () {
 			function sleep(ms) {
@@ -39,6 +40,8 @@
 
 			/* It takes a few millisocends for the webpack script to load and this must wait until that is done */
 			loadAfterScript(function () { window.TTCSearchApp(ttcParams) });
+
+			document.getElementById('title-tag').innerHTML = "TTC Abstract Search";
 
 		}());
 	</script>
