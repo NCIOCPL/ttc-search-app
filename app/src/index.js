@@ -62,7 +62,7 @@ const initialize = ({
 		code = `
 		ottEmbedSettings = {
 			detailSelector: '.ott-embed',
-			detailParameter: 'abstract',
+			detailParameter: '${searchKey}',
 			detailTitleTemplate: '\\\${title}',
 			detailBreadcrumbSelector: '.usa-breadcrumb__list',
 			detailBreadcrumbTemplate: \`
