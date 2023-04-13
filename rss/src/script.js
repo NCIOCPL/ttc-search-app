@@ -108,3 +108,9 @@ for (let i = 0; i < rssFiles.length; i++) {
 
       // console.log(doc.toString());
 }
+
+/* example test -- to be removed*/
+function sum(a, b) {
+  return a + b;
+}
+module.exports = sum;
