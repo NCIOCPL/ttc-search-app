@@ -8,9 +8,16 @@ const initialize = ({
 	rootId = 'NCI-app-root',
 	basePath = 'search',
 	searchKey = 'key',
+	src = 'https://www.techtransfer.nih.gov/modules/custom/nih_algolia/js/ott-search.js',
+	title = 'TTC Abstract Search',
 	...rest
 } = {}) => {
 	const appRoot = document.getElementById(rootId);
+
+	// create the h1 title tag
+	const pageTitle = document.createElement("h1");
+	pageTitle.appendChild(document.createTextNode(title))
+	appRoot.appendChild(pageTitle)
 
 	// create the OTT embed div
 	const ottEmbed = document.createElement("div")
@@ -89,7 +96,7 @@ const initialize = ({
 
 	// create the NIH script tag
 	const ottScript = document.createElement("script")
-	ottScript.src = 'https://www.techtransfer.nih.gov/modules/custom/nih_algolia/js/ott-search.js';
+	ottScript.src = src;
 	ottScript.async = false;
 	ottScript.setAttribute('onload','ott_embed(ottEmbedSettings);')
 	var head = document.head || document.getElementsByTagName('head')[0];
