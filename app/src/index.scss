@@ -1,3 +1,125 @@
-body {
-	font-family: Arial, Helvetica, sans-serif;
+
+.field__label {
+	font-weight: bold;
+}
+
+.field--label-inline .field__label,
+.field--label-inline .field__items {
+	float: left; /* LTR */
+}
+
+.field--label-inline .field__label,
+.field--label-inline > .field__item,
+.field--label-inline .field__items {
+	padding-right: 0.5em;
+}
+
+[dir="rtl"] .field--label-inline .field__label,
+[dir="rtl"] .field--label-inline .field__items {
+	padding-right: 0;
+	padding-left: 0.5em;
+}
+  
+.field--label-inline .field__label::after {
+	content: ":";
+}
+
+.cgdpl .contentzone ul>li:before {
+	content: none;
+}
+
+.ott-embed .ais-RefinementList-label {
+    display: inline !important;
+}
+
+.ott-embed .ais-RefinementList {
+	padding: 8px 16px 8px 0px !important;
+}
+
+// .ott-embed .ais-RefinementList .ais-SearchBox-form {
+// 	padding: 8px 16px !important;
+// }
+
+.ais-RefinementList .ais-RefinementList-showMore {
+	padding: 8px 16px !important;
+}
+
+// CSS for pagination
+.ais-Pagination-item--page {
+	margin: 3px !important;
+	padding: 1% 2% !important;
+	width: 15%;
+	border-width: 1px;
+	border-color: #bfbfbf !important;
+	border-radius: 3px;
+}
+
+.ais-Pagination-item--selected:not(.ais-Pagination-item--disabled) {
+	background-color: #25619b !important;
+}
+
+.ais-Pagination-item--selected:not(.ais-Pagination-item--disabled)
+.ais-Pagination-link {
+	color: white !important;
+}
+
+.ais-Pagination-link {
+	color: #2a72a5 !important;
+}
+
+li.ais-Pagination-item--nextPage a.ais-Pagination-link::before {
+	content: "Next" !important;
+	margin-right: .5rem !important;
+}
+
+.ais-Pagination-item--nextPage {
+	margin-left: 8px !important;
+}
+
+li.ais-Pagination-item--previousPage a.ais-Pagination-link::after {
+	content: "Back" !important;
+	margin-left: .5rem !important;
+}
+
+li.ais-Pagination-item--previousPage {
+	margin-right: 8px !important;
+}
+
+.ais-Pagination-item--lastPage, .ais-Pagination-item--firstPage {
+	display: none !important;
+}
+
+// Nav bar
+label.ais-RefinementList-label .ais-RefinementList-count {
+	color: #25619b !important;
+	background-color: white !important;
+	margin: 3px !important;
+	padding: 5px 10px !important;
+	border-radius: 3px;
+	border: 1px solid #bfbfbf;
+}
+
+// paragraph snippet spacing
+p.content-type {
+	padding: 0px !important;
+	color: #1B1B1B !important;
+}
+
+// search button color
+.cgdpl form button[type=submit] {
+	background-color: #007bbd;
+	height: 15px;
+	border-radius: 0;
+}
+
+.facets .ais-SearchBox-form {
+	padding-left: 15px;
+	.ais-SearchBox-submit {
+		padding-left: 13px;
+		margin: 0px;
+	}
+}
+
+.contentzone form button {
+	min-width: 25px !important;
 }
