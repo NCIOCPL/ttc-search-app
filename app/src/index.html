@@ -3,29 +3,79 @@
 
 <head>
 	<title>TTC Abstract Search</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+		rel="stylesheet"/>
+	<link
+		rel="stylesheet"
+		media="all"
+		href="https://www.cancer.gov/sites/g/files/xnrzdm211/files/css/css_Sl4LRMNAKgKC73I4WttbKaFTfRNzrtOxiNi3J1AifR8.css"
+	/>
+	<link
+		rel="stylesheet"
+		media="all"
+		href="https://www.cancer.gov/profiles/custom/cgov_site/themes/custom/ncids_trans/dist/css/ncids-common.css?rt16kk"
+	/>
+	<link
+		rel="stylesheet"
+		media="all"
+		href="https://www.cancer.gov/profiles/custom/cgov_site/themes/custom/ncids_trans/dist/css/app-module.css?rt16kk"
+	/>
 </head>
 
 <body>
-	<ol class="usa-breadcrumb__list">
-		<li class="usa-breadcrumb__list-item">
-			<a href="/" class="usa-breadcrumb__link">
-				<span>Home</span>
-			</a>
-		</li>
-		<li class="usa-breadcrumb__list-item usa-current" aria-current="page">
-			<span>TTC Abstract Search</span>
-		</li>
-	</ol>
-	<div id="app-root"></div>
+	<div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+		<div class="grid-container">
+			<div class="grid-row flex-no-wrap">
+				<div class="grid-col-10">
+					<nav
+						class="usa-breadcrumb usa-breadcrumb--wrap"
+						aria-label="Breadcrumbs"
+					>
+						<ol class="usa-breadcrumb__list">
+							<li class="usa-breadcrumb__list-item">
+								<a href="/" class="usa-breadcrumb__link">
+									<span>Home</span>
+								</a>
+							</li>
+							<li
+								class="usa-breadcrumb__list-item usa-current"
+								aria-current="page"
+							>
+								<span>TTC Abstract Search</span>
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div id="page" class="grid-container">
+			<div class="grid-row grid-gap">
+				<div class="cgdpl grid-col-12">
+					<div id="content" class="">
+						<main class="contentzone has-section-nav" id="main-content">
+							<article>
+								<div class="resize-content">
+									<div id="app-root"></div>
+								</div>
+							</article>
+						</main>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script>
 		(function () {
 			function sleep(ms) {
-				return new Promise(resolve => setTimeout(resolve, ms));
+				return new Promise((resolve) => setTimeout(resolve, ms));
 			}
 
 			async function loadAfterScript(cb) {
-				while (typeof TTCSearchApp !== "function") {
-					console.log("waiting");
+				while (typeof TTCSearchApp !== 'function') {
+					console.log('waiting');
 					await sleep(10);
 				}
 				cb();
@@ -40,9 +90,10 @@
 			}
 
 			/* It takes a few millisocends for the webpack script to load and this must wait until that is done */
-			loadAfterScript(function () { window.TTCSearchApp(ttcParams) });
-
-		}());
+			loadAfterScript(function () {
+				window.TTCSearchApp(ttcParams);
+			});
+		})();
 	</script>
 </body>
 
