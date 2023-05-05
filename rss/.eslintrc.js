@@ -11,6 +11,7 @@ module.exports = {
 	],
 	settings: {
 	},
+	ignorePatterns: ["**/__fixtures__/**"],
 	parser: '@babel/eslint-parser',
 	parserOptions: {
 		ecmaVersion: 2016,

@@ -16,8 +16,10 @@
     "algoliasearch": "^4.15.0",
     "eslint": "^8.41.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "libxmljs": "^0.19.10",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "libxmljs": "^1.0.9",
+    "mock-fs": "^5.2.0",
+    "nock": "^13.3.1"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.21.5",
