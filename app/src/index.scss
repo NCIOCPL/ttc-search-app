@@ -1,4 +1,3 @@
-
 .field__label {
 	font-weight: bold;
 }
@@ -19,7 +18,7 @@
 	padding-right: 0;
 	padding-left: 0.5em;
 }
-  
+
 .field--label-inline .field__label::after {
 	content: ":";
 }
@@ -137,4 +136,35 @@ p.content-type {
     line-height: 1.215em;
 	margin: 8px 0px;
 	font-family: Poppins, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+.field--name-field-commercial-applications .field__item ul>li,
+.field--name-field-competitive-advantages .field__item ul>li{
+	list-style-type: disc !important;
+}
+
+.container-card--shadow {
+	margin-left: 0 !important;
+}
+
+.field--name-field-commercial-applications .field__item p,
+.field--name-field-competitive-advantages .field__item p {
+	margin: 8px 0;
+}
+
+.field--name-field-id {
+	margin-top: 35px;
+}
+
+h2.heading-faux-button__blue {
+	margin-top: 10px;
+}
+
+.field--name-field-applications, .field--name-field-licensing-contact,
+.field--name-field-date-published {
+	line-height: 1.5em;
+}
+
+.field--name-node-title h1{
+	font-size: 1.5em;
 }
