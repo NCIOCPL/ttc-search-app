@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "backstop-generate": "backstop reference --config=backstop-config.js",
+    "backstop-test": "backstop test --config=backstop-config.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "start": "cross-env NODE_ENV=development webpack serve --progress --config config/webpack.dev.js",
     "lint": "eslint src --ext .js,.jsx",
@@ -45,6 +47,9 @@
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.21.8",
-    "eslint-plugin-jsx-a11y": "^6.7.1"
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "@testing-library/dom": "^9.3.0",
+    "backstopjs": "^6.2.1",
+    "jest-environment-jsdom": "^29.5.0"
   }
 }

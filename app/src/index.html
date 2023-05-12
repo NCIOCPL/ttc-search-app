@@ -57,7 +57,7 @@
 						<main class="contentzone has-section-nav" id="main-content">
 							<article>
 								<div class="resize-content">
-									<div id="app-root"></div>
+									<div data-testid="app-root" id="app-root"></div>
 								</div>
 							</article>
 						</main>
@@ -81,6 +81,8 @@
 				cb();
 			}
 
+			// if you update this
+			// don't forget to update the test params
 			const ttcParams = {
 				rootId: 'app-root',
 				basePath: '/',

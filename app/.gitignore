@@ -2,6 +2,11 @@
 # To test that, run `git ls-files -i --exclude-standard`.
 # To check why a specific file is ignored, run `git check-ignore -v <filepath>`.
 
+
+# === Backstop ===
+backstop_data/bitmaps_test
+backstop_data/html_report
+
 # === Rule for dotfiles ===
 # Ignore all dotfiles.
 .*
