@@ -89,7 +89,7 @@ li.ais-Pagination-item--previousPage {
 	display: none !important;
 }
 
-// Nav bar
+// left column numbers
 label.ais-RefinementList-label .ais-RefinementList-count {
 	color: #25619b !important;
 	background-color: white !important;
@@ -97,6 +97,13 @@ label.ais-RefinementList-label .ais-RefinementList-count {
 	padding: 5px 10px !important;
 	border-radius: 3px;
 	border: 1px solid #bfbfbf;
+}
+
+// left column sizing
+@media (min-width: 768px) {
+	.facets-left-column .facets {
+		width: 18rem;
+	}
 }
 
 // paragraph snippet spacing
@@ -122,4 +129,12 @@ p.content-type {
 
 .contentzone form button {
 	min-width: 25px !important;
+}
+
+// date published
+.field--name-field-date-published .field__label {
+	font-size: 1.4375em;
+    line-height: 1.215em;
+	margin: 8px 0px;
+	font-family: Poppins, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 }
