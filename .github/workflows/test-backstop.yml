@@ -26,8 +26,9 @@ jobs:
           scope: "@nciocpl"
           cache-dependency-path: app/package-lock.json
       - name: Run NPM
-        run: npm install
-        working-directory: app
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       ## Serve the site to test it
       - name: Test Site
