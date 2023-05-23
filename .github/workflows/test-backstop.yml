@@ -17,7 +17,6 @@ defaults:
   run:
     working-directory: app
 
-
 jobs:
   build:
     name: Test Site
@@ -50,11 +49,11 @@ jobs:
         if: failure()
         with:
           name: failed-backstopjs
-          path: backstop_data
+          path: app/backstop_data
 
       ## Upload successful css tests
       - uses: actions/upload-artifact@v2
         name: Upload successful tests
         with:
           name: success-backstopjs
-          path: backstop_data/bitmaps_test/**/report.json
+          path: app/backstop_data/bitmaps_test/**/report.json
