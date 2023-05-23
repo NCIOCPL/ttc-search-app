@@ -1,0 +1,41 @@
+name: Test RSS
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+    paths: rss/**
+
+#cancel previous runs for this ref
+concurrency:
+  group: ${{ github.ref }}-rss
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: rss
+
+jobs:
+  test:
+    name: Test Site
+    runs-on: ubuntu-latest
+    steps:
+      ## Checkout the code
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      ## Setup node and npm caching
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: "rss/.nvmrc"
+          registry-url: https://npm.pkg.github.com
+          scope: "@nciocpl"
+          cache: "npm"
+          cache-dependency-path: rss/package-lock.json
+      - name: Run NPM
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      ## Serve the site to test it
+      - name: Test Site
+        run: npm run test

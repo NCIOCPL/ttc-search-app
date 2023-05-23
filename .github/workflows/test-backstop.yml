@@ -1,27 +1,24 @@
 name: Test Backstop
 on:
-  push:
-    branches:
-      - master
-      - main
-      - develop
-      - 'hotfix/**'
-      - 'release/**'
-      - 'feature/**'
-      - 'prototype/**'
-    tags:
-      - '*'
   pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+    paths: app/**
+
+#cancel previous runs for this ref
+concurrency:
+  group: ${{ github.ref }}-test-backstop
+  cancel-in-progress: true
 
 defaults:
   run:
     working-directory: app
 
 jobs:
-  build:
+  backstop:
     name: Test Site
     runs-on: ubuntu-latest
     environment: ${{ inputs.environment }}
+    if: ${{ !github.event.pull_request.draft }}
     steps:
       ## Checkout the code
       - name: Checkout branch
@@ -31,29 +28,34 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version-file: ".nvmrc"
+          node-version-file: "app/.nvmrc"
           registry-url: https://npm.pkg.github.com
           scope: "@nciocpl"
+          cache: "npm"
+          cache-dependency-path: app/package-lock.json
       - name: Run NPM
-        run: npm install
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       ## Serve the site to test it
       - name: Test Site
-        run: npm run backstop-test
-        env: 
+        run: npm run start & sleep 10 && npm run backstop-test
+        env:
           BACKSTOP_BASE_URL: http://localhost:8080
 
       ## Upload failed css tests
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         name: Upload failed tests
         if: failure()
         with:
           name: failed-backstopjs
-          path: backstop_data
+          path: app/backstop_data
 
       ## Upload successful css tests
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         name: Upload successful tests
         with:
           name: success-backstopjs
-          path: backstop_data/bitmaps_test/**/report.json
+          path: app/backstop_data/bitmaps_test/**/report.json
+
