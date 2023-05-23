@@ -4,15 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/eslint-parser": "^7.21.8",
+    "@nciocpl/eslint-config-vanilla-js": "^0.8.0",
     "algoliasearch": "^4.15.0",
-    "libxmljs": "^0.19.10"
+    "eslint": "^8.41.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "libxmljs": "^0.19.10",
+    "prettier": "^2.8.8"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.21.5",
     "jest": "^29.5.0"
   }
 }
