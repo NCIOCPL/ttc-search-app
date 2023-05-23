@@ -1,17 +1,7 @@
 name: Test Backstop
 on:
-  push:
-    branches:
-      - master
-      - main
-      - develop
-      - 'hotfix/**'
-      - 'release/**'
-      - 'feature/**'
-      - 'prototype/**'
-    tags:
-      - '*'
   pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
 
 defaults:
   run:
