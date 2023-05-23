@@ -27,6 +27,7 @@ jobs:
           cache-dependency-path: app/package-lock.json
       - name: Run NPM
         run: npm install
+        working-directory: app
 
       ## Serve the site to test it
       - name: Test Site
