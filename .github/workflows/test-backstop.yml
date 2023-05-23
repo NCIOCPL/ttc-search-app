@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version-file: ".nvmrc"
+          node-version-file: "app/.nvmrc"
           registry-url: https://npm.pkg.github.com
           scope: "@nciocpl"
           cache-dependency-path: app/package-lock.json
