@@ -1,6 +1,9 @@
 name: Generate Backstop Reference Images
 on:
   workflow_dispatch:
+permissions:
+  contents: write
+  packages: read
 
 defaults:
   run:
