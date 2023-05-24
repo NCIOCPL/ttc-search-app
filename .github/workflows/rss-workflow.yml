@@ -1,5 +1,16 @@
 name: Test RSS
 on:
+  push:
+    branches:
+      - main
+      - develop
+      - 'hotfix/**'
+      - 'release/**'
+      - 'feature/**'
+      - 'prototype/**'
+    tags:
+      - '*'
+    paths: rss/**
   pull_request:
     types: [opened, reopened, synchronize, ready_for_review]
     paths: rss/**
