@@ -34,7 +34,7 @@ const initialize = ({
 
 	// determine if this is the search page or detail page
 	if (abstractId === null) {
-		// search page settings
+		// create search page settings
 		code = `
 		ottEmbedSettings = {
 		selector: ".ott-embed",
