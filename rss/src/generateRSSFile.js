@@ -5,7 +5,7 @@ const writeRSSFile = require('./writeFile.js');
 const libxmljs = require('libxmljs');
 
 async function generateRSSFile(rssFile) {
-	const { title, description, link } = rssFile;
+	const { title, description, link, xmlFilename } = rssFile;
 	const { hits } = await getOTTData(rssFile.filters);
 
 	var doc = await createRSSchannel(title, description, link);
@@ -16,7 +16,7 @@ async function generateRSSFile(rssFile) {
 
 	await writeRSSFile(
 		libxmljs.parseXml(doc.toString()),
-		rssFile.title + '.xml',
+		rssFile.xmlFilename + '.xml',
 		'public/rss'
 	);
 }

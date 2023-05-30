@@ -31,7 +31,9 @@ describe('Generate RSS File', () => {
 			title: 'My File',
 			description: 'My File Decsription',
 			link: 'http://www.example.com',
-			facetFilterFields: ['field_ics:NCI', 'field_applications:Diagnostics'],
+			filters:
+				'field_govdelivery:false AND field_ics:NCI AND (field_applications:Diagnostics)',
+			xmlFilename: 'my-file.txt',
 		};
 	});
 
@@ -45,7 +47,7 @@ describe('Generate RSS File', () => {
 
 		await generateRSSFile(rssFile);
 		const file = await promises.readFile(
-			`${process.cwd()}/public/rss/${rssFile.title}.xml`,
+			`${process.cwd()}/public/rss/${rssFile.xmlFilename}.xml`,
 			'utf8'
 		);
 		expect(file);
@@ -61,7 +63,7 @@ describe('Generate RSS File', () => {
 	test.each(hits)('Check if result is in XML', async (hit) => {
 		await generateRSSFile(rssFile);
 		const file = await promises.readFile(
-			`${process.cwd()}/public/rss/${rssFile.title}.xml`,
+			`${process.cwd()}/public/rss/${rssFile.xmlFilename}.xml`,
 			'utf8'
 		);
 		const doc = libxmljs.parseXml(file);
