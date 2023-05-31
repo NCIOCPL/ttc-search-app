@@ -21,7 +21,7 @@ concurrency:
 
 jobs:
   react-app-workflow:
-    uses: nciocpl/cgov-react-app-playground/.github/workflows/workflow.yml@ticket/93-workflow-with-subdirectories
+    uses: nciocpl/cgov-react-app-playground/.github/workflows/workflow.yml@workflow/v2
     secrets: inherit
     with:
-      app_path: "app/"
+      app_path: 'app/'
