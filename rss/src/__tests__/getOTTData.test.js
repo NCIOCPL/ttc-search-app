@@ -28,16 +28,14 @@ describe('Get OTT Data', () => {
 		const mockIndex = algoliasearch().initIndex();
 		mockIndex.search.mockResolvedValue(mockSearchResults);
 
-		const facetFilterFields = [
-			'field_ics:NCI',
-			'field_applications:My Application',
-		]; // Add your desired facet filter fields here
+		const filters =
+			'field_govdelivery:false AND field_ics:NCI AND (field_applications)'; // Add your desired facet filter fields here
 
-		const results = await getOTTData(facetFilterFields);
+		const results = await getOTTData(filters);
 
 		expect(results).toEqual(mockSearchResults);
 		expect(mockIndex.search).toHaveBeenCalledWith('', {
-			facetFilters: facetFilterFields,
+			filters: filters,
 			hitsPerPage: 1000,
 		});
 	});
