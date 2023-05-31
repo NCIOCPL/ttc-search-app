@@ -4,9 +4,9 @@ const client = algoliasearch('WEXCESI5EU', '3986149b687b8f20e2468432f329f08c');
 
 const index = client.initIndex('ott_updated_idx');
 
-async function getOTTData(facetFilterFields) {
+async function getOTTData(filters) {
 	const results = index.search('', {
-		facetFilters: facetFilterFields,
+		filters: filters,
 		hitsPerPage: 1000,
 	});
 	return results;

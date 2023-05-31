@@ -12,9 +12,7 @@ describe('Configuration file validation', () => {
 			expect(item).toHaveProperty('title');
 			expect(item).toHaveProperty('description');
 			expect(item).toHaveProperty('link');
-			expect(item).toHaveProperty('facetFilterFields');
-
-			expect(Array.isArray(item.facetFilterFields)).toBe(true);
+			expect(item).toHaveProperty('filters');
 		});
 	});
 });

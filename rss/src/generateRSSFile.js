@@ -5,7 +5,7 @@ const writeRSSFile = require('./writeRSSFile.js');
 
 async function generateRSSFile(rssFile) {
 	const { title, description, link } = rssFile;
-	const { hits } = await getOTTData(rssFile.facetFilterFields);
+	const { hits } = await getOTTData(rssFile.filters);
 
 	var doc = await createRSSchannel(title, description, link);
 
