@@ -45,11 +45,11 @@ const initialize = ({
 		filter: 'field_ics:NCI',  // Limit to NCI abstracts
 		searchResultTemplate:\`
 				<article class="{{ type }}">
+				<p class="'title'">
+				<a href='${basePath}?${searchKey}={{ field_id }}'>{{#helpers.snippet}}{ "attribute": "title" }{{/helpers.snippet}}</a>
+				</p>
 				<p class="content-type">
 					Technology <span class="field_id">{{#helpers.snippet}}{ "attribute": "field_id" }{{/helpers.snippet}}</span>
-				</p>
-				<p class="'title'">
-					<a href='${basePath}?${searchKey}={{ field_id }}'>{{#helpers.snippet}}{ "attribute": "title" }{{/helpers.snippet}}</a>
 				</p>
 				<p class="inventors">
 					{{#helpers.snippet}}{ "attribute": "field_lead_inventors" }{{/helpers.snippet}}

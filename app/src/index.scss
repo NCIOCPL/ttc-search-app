@@ -111,6 +111,12 @@ p.content-type {
 	color: #1B1B1B !important;
 }
 
+// search results title size
+.ais-Hits-item a{
+	font-size: 1.1250em;
+	font-family: Poppins;
+}
+
 // search button color
 .cgdpl form button[type=submit] {
 	background-color: #007bbd;
