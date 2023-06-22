@@ -3,7 +3,10 @@
 const rssFiles = require('./rss-files-config.js');
 
 const generateRSSFile = require('./generateRSSFile.js');
+const generateStaticFiles = require('./generateStaticFiles.js');
 
 for (let i = 0; i < rssFiles.length; i++) {
 	generateRSSFile(rssFiles[i]);
 }
+
+generateStaticFiles();
