@@ -114,8 +114,16 @@ p.content-type {
 // search button color
 .cgdpl form button[type=submit] {
 	background-color: #007bbd;
+	border-color: #007bbd;
 	height: 15px;
 	border-radius: 0;
+}
+
+.cgdpl .button.submit:focus, .cgdpl .button.submit:hover, .cgdpl .button[type=submit]:focus, 
+.cgdpl .button[type=submit]:hover, .cgdpl form button.submit:focus, .cgdpl form button.submit:hover,
+.cgdpl form button[type=submit]:focus, .cgdpl form button[type=submit]:hover {
+    background-color: #004971;
+    color: #fff;
 }
 
 .facets .ais-SearchBox-form {
