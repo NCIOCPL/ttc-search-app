@@ -20,17 +20,13 @@ describe('Generate RSS File', () => {
 	let rssFile;
 	const { hits } = mockSearchResults;
 
-	beforeAll(() => {
-		mock({
-			public: {},
-		});
-	});
-
-	afterAll(() => {
-		mock.restore();
-	});
-
 	beforeEach(() => {
+		mock({
+			public: {
+				rss: {},
+			},
+		});
+
 		rssFile = {
 			title: 'My File',
 			description: 'My File Decsription',
@@ -39,13 +35,17 @@ describe('Generate RSS File', () => {
 		};
 	});
 
+	afterEach(() => {
+		mock.restore();
+	});
+
 	it('generates an RSS File', async () => {
 		const mockIndex = algoliasearch().initIndex();
 		mockIndex.search.mockResolvedValue(mockSearchResults);
 
 		await generateRSSFile(rssFile);
 		const file = await promises.readFile(
-			`${process.cwd()}/public/${rssFile.title}.xml`,
+			`${process.cwd()}/public/rss/${rssFile.title}.xml`,
 			'utf8'
 		);
 		expect(file);
@@ -61,7 +61,7 @@ describe('Generate RSS File', () => {
 	test.each(hits)('Check if result is in XML', async (hit) => {
 		await generateRSSFile(rssFile);
 		const file = await promises.readFile(
-			`${process.cwd()}/public/${rssFile.title}.xml`,
+			`${process.cwd()}/public/rss/${rssFile.title}.xml`,
 			'utf8'
 		);
 		const doc = libxmljs.parseXml(file);

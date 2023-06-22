@@ -1,0 +1,12 @@
+# === Rule for dotfiles ===
+# Ignore all dotfiles.
+.*
+!.gitignore
+
+# === Global Rules ===
+# Keep last to avoid being excluded
+*.pyc
+__pycache__
+.DS_Store
+*~
+/.idea

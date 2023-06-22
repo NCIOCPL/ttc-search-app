@@ -1,5 +1,5 @@
 const libxmljs = require('libxmljs');
-const writeFile = require('../writeRSSFile');
+const writeFile = require('../writeFile');
 const mockFS = require('mock-fs');
 const { promises } = require('fs');
 
@@ -38,10 +38,25 @@ describe('Write files', () => {
 		mockFS({
 			public: {},
 		});
-		const filename = 'test-filename';
+		const filename = 'test-filename.xml';
 		await writeFile(doc, filename);
 		const result = await promises.readFile(
-			`${process.cwd()}/public/${filename}.xml`,
+			`${process.cwd()}/public/${filename}`,
+			'utf8'
+		);
+		expect(result).toEqual(doc.toString());
+	});
+
+	it('should allow you to override the folder path', async () => {
+		mockFS({
+			public: {
+				test: {},
+			},
+		});
+		const filename = 'test-filename.xml';
+		await writeFile(doc, filename, 'public/test');
+		const result = await promises.readFile(
+			`${process.cwd()}/public/test/${filename}`,
 			'utf8'
 		);
 		expect(result).toEqual(doc.toString());
