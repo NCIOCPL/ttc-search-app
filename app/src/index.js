@@ -27,6 +27,35 @@ const initialize = ({
 	const ottSettings = document.createElement('script');
 	var code;
 
+	// create an EDDL analytics object
+	window.NCIDataLayer = window.NCIDataLayer || [];
+	let pageInfo = {};
+
+	// _satellite is defined by the CMS
+	/* eslint-disable no-undef */
+	if (typeof _satellite === 'object') {
+		pageInfo = {
+			name: _satellite.getVar('Fn:getPageName'),
+			title: _satellite.getVar('DOM:Meta:OpenGraph:Title'),
+			metaTitle: _satellite.getVar('DOM:Title'),
+			language: _satellite.getVar('Fn:getNciPageLang'),
+			type: _satellite.getVar('DOM:Meta:DCTerms:Type'),
+			audience: _satellite.getVar('Fn:getNciAudience'),
+			channel: _satellite.getVar('DOM:Meta:DCTerms:Subject'),
+			contentGroup: _satellite.getVar('DOM:Meta:DCTerms:IsPartOf'),
+			publishedDate: _satellite
+				.getVar('DOM:Meta:DCTerms:Issued')
+				.split(' - ')[0],
+			additionalDetails: {},
+		};
+
+		var pageNum = parseInt(_satellite.getVar('Query:Page'));
+		if (!isNaN(pageNum)) {
+			pageInfo.additionalDetails['pageNum'] = pageNum;
+		}
+	}
+	/* eslint-enable no-undef */
+
 	const params = new Proxy(new URLSearchParams(window.location.search), {
 		get: (searchParams, prop) => searchParams.get(prop),
 	});
@@ -61,6 +90,13 @@ const initialize = ({
 				</article>
 				\`,
 		};`;
+
+		// register the page launch
+		window.NCIDataLayer.push({
+			type: 'PageLoad',
+			event: 'AbstractSearchPageLoad',
+			page: pageInfo,
+		});
 	} else {
 		// detail page settings
 		code = `
@@ -88,6 +124,13 @@ const initialize = ({
 				</li>
 				\`,
 		};`;
+
+		// register the page launch
+		window.NCIDataLayer.push({
+			type: 'PageLoad',
+			event: 'AbstractDetailsPageLoad',
+			page: pageInfo,
+		});
 	}
 
 	ottSettings.appendChild(document.createTextNode(code));
