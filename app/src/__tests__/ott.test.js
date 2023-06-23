@@ -38,7 +38,15 @@ describe('search homepage', () => {
 	// });
 
 	it('loads the OTT search form', async () => {
+		// mocking console.dir because the OTT script calls it with two parameters
+		// which is technically invalid, but only breaks JSDOM not actual browsers
+		const consoleDirMock = jest
+			.spyOn(console, 'dir')
+			.mockImplementation(() => {});
+
 		const search = await screen.findByRole('search');
 		expect(search);
+
+		consoleDirMock.mockRestore();
 	});
 });
