@@ -12,7 +12,7 @@ async function generateStaticFiles() {
 		await writeFile(
 			staticFile,
 			hit.field_data_source_id + '.html',
-			'public/html'
+			'public/html/abstract'
 		);
 	}
 

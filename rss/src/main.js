@@ -4,9 +4,14 @@ const rssFiles = require('./rss-files-config.js');
 
 const generateRSSFile = require('./generateRSSFile.js');
 const generateStaticFiles = require('./generateStaticFiles.js');
+const uploadToAkamai = require('./uploadToAkamai.js');
 
-for (let i = 0; i < rssFiles.length; i++) {
-	generateRSSFile(rssFiles[i]);
-}
+(async () => {
+	for (let i = 0; i < rssFiles.length; i++) {
+		await generateRSSFile(rssFiles[i]);
+	}
+	uploadToAkamai('public/rss', 'public/rss.zip');
 
-generateStaticFiles();
+	await generateStaticFiles();
+	await uploadToAkamai('public/html', 'public/available-technologies.zip');
+})();

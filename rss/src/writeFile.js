@@ -16,6 +16,7 @@ async function writeFile(doc, filename, path) {
 
 	return promises.writeFile(`${currentPath}/${filename}`, doc.toString(), {
 		flag: 'w+',
+		encoding: 'utf-8',
 	});
 }
 
