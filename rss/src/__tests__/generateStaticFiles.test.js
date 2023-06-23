@@ -50,7 +50,9 @@ describe('Generate Static Files', () => {
 		await generateStaticFiles();
 		for (const hit of hits) {
 			const file = await promises.readFile(
-				`${process.cwd()}/public/html/${hit.field_data_source_id}.html`,
+				`${process.cwd()}/public/html/abstract/${
+					hit.field_data_source_id
+				}.html`,
 				'utf8'
 			);
 			expect(file);
