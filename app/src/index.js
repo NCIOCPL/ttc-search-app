@@ -125,6 +125,8 @@ const initialize = ({
 				\`,
 		};`;
 
+		pageInfo.additionalDetails['abstractId'] = abstractId;
+
 		// register the page launch
 		window.NCIDataLayer.push({
 			type: 'PageLoad',
