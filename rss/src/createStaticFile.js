@@ -1,5 +1,5 @@
 async function createStaticFile(hit) {
-	var description = hit.body.replace(/<[^>]+>/g, '').slice(0, 200);
+	var description = hit.body.replace(/<[^>]+>/g, '').slice(0, 255);
 	const lastPeriodIndex = description.lastIndexOf('.');
 	if (lastPeriodIndex !== -1) {
 		description = description.slice(0, lastPeriodIndex + 1);
