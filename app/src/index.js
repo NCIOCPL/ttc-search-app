@@ -115,8 +115,7 @@ const initialize = ({
 					<a href="${basePath}${document.referrer.substring(
 			document.referrer.indexOf(basePath) + basePath.length
 		)}" class="usa-breadcrumb__link">
-						<span>TTC Abstract
-							Search</span>
+						<span>${title}</span>
 						</a>
 					</li>
 				<li class="usa-breadcrumb__list-item usa-current" aria-current="page">
