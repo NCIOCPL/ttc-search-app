@@ -13,16 +13,6 @@ const initialize = ({
 } = {}) => {
 	const appRoot = document.getElementById(rootId);
 
-	// create the h1 title tag
-	const pageTitle = document.createElement('h1');
-	pageTitle.appendChild(document.createTextNode(title));
-	appRoot.appendChild(pageTitle);
-
-	// create the OTT embed div
-	const ottEmbed = document.createElement('div');
-	ottEmbed.setAttribute('class', 'ott-embed');
-	appRoot.appendChild(ottEmbed);
-
 	// create the settings
 	const ottSettings = document.createElement('script');
 	var code;
@@ -63,6 +53,11 @@ const initialize = ({
 
 	// determine if this is the search page or detail page
 	if (abstractId === null) {
+		// create the h1 title tag
+		const pageTitle = document.createElement('h1');
+		pageTitle.appendChild(document.createTextNode(title));
+		appRoot.appendChild(pageTitle);
+
 		// create search page settings
 		code = `
 		ottEmbedSettings = {
@@ -124,7 +119,13 @@ const initialize = ({
 				\`,
 		};`;
 
-		pageInfo.additionalDetails['abstractId'] = abstractId;
+		// _satellite is defined by the CMS
+		/* eslint-disable no-undef */
+		if (typeof _satellite === 'object') {
+			console.log(pageInfo);
+			pageInfo.additionalDetails['abstractId'] = abstractId;
+		}
+		/* eslint-enable no-undef */
 
 		// register the page launch
 		window.NCIDataLayer.push({
@@ -133,6 +134,11 @@ const initialize = ({
 			page: pageInfo,
 		});
 	}
+
+	// create the OTT embed div
+	const ottEmbed = document.createElement('div');
+	ottEmbed.setAttribute('class', 'ott-embed');
+	appRoot.appendChild(ottEmbed);
 
 	ottSettings.appendChild(document.createTextNode(code));
 	appRoot.appendChild(ottSettings);
