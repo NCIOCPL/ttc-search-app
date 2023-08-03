@@ -11,7 +11,8 @@ describe('Configuration file validation', () => {
 		config.forEach((item) => {
 			expect(item).toHaveProperty('title');
 			expect(item).toHaveProperty('description');
-			expect(item).toHaveProperty('link');
+			expect(item).toHaveProperty('channelLink');
+			expect(item).toHaveProperty('itemLink');
 			expect(item).toHaveProperty('filters');
 		});
 	});

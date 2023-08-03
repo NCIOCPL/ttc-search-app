@@ -1,4 +1,4 @@
-async function createRSSItem(result, link, doc) {
+async function createRSSItem(result, itemLink, doc) {
 	var channel = doc.get('//channel');
 
 	const pubDate = new Date(result.field_date_published * 1000);
@@ -7,7 +7,7 @@ async function createRSSItem(result, link, doc) {
 		.node('item')
 		.node('title', result.title)
 		.parent()
-		.node('link', result.url)
+		.node('link', 'http://techtransfer.cancer.gov' + itemLink + result.field_id)
 		.parent()
 		.node('description', result.body)
 		.parent()
@@ -15,7 +15,7 @@ async function createRSSItem(result, link, doc) {
 		.parent()
 		.node('dc:creator', 'Anonymous')
 		.parent()
-		.node('guid', link + '/' + result.field_id)
+		.node('guid', itemLink + result.field_id)
 		.attr({ isPermaLink: 'true' })
 		.parent();
 

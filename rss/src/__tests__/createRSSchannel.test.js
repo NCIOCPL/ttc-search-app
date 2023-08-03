@@ -18,13 +18,13 @@ describe('Create RSS Channel', () => {
 	it('populates the correct data', async () => {
 		const result = await rssChannel(title, description, link, language);
 		expect(result.get('/rss/channel/title').text()).toEqual(title);
-		expect(result.get('/rss/channel/link').text()).toEqual(link);
+		expect(result.get('/rss/channel/link').text()).toEqual('https://techtransfer.cancer.gov' + link);
 		expect(
 			result
 				.get('/rss/channel/*[name()="atom:link"]')
 				.getAttribute('href')
 				.value()
-		).toEqual(link);
+		).toEqual('https://techtransfer.cancer.gov' + link);
 		expect(result.get('/rss/channel/description').text()).toEqual(description);
 		expect(result.get('/rss/channel/language').text()).toEqual(language);
 	});

@@ -11,7 +11,9 @@ describe('Create RSS Item', () => {
 
 		const item = await rssItem(result, url, doc);
 		expect(item.get('/root/channel/item/title').text()).toEqual(result.title);
-		expect(item.get('/root/channel/item/link').text()).toEqual(result.url);
+		expect(item.get('/root/channel/item/link').text()).toEqual(
+			'http://techtransfer.cancer.gov' + url + result.field_id
+		);
 		expect(item.get('/root/channel/item/description').text()).toEqual(
 			result.body
 		);
@@ -22,7 +24,7 @@ describe('Create RSS Item', () => {
 			item.get('/root/channel/item/*[name()="dc:creator"]').text()
 		).toEqual('Anonymous');
 		expect(item.get('/root/channel/item/guid').text()).toEqual(
-			url + '/' + result.field_id
+			url + result.field_id
 		);
 	});
 });

@@ -1,6 +1,6 @@
 var libxmljs = require('libxmljs');
 
-async function createRSSchannel(title, description, link, search_api_language) {
+async function createRSSchannel(title, description, channelLink, search_api_language) {
 	var doc = new libxmljs.Document();
 
 	// creating xml
@@ -24,7 +24,7 @@ async function createRSSchannel(title, description, link, search_api_language) {
 		.node('channel')
 		.node('title', title)
 		.parent()
-		.node('link', link)
+		.node('link', 'https://techtransfer.cancer.gov' + channelLink)
 		.parent()
 		.node('description', description)
 		.parent()
@@ -32,7 +32,7 @@ async function createRSSchannel(title, description, link, search_api_language) {
 		.parent()
 		.node('atom:link')
 		.attr({
-			href: link,
+			href: 'https://techtransfer.cancer.gov' + channelLink,
 			rel: 'self',
 			type: 'application/rss+xml',
 		});
