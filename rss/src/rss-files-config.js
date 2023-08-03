@@ -4,7 +4,8 @@ const rss = [
 		description: 'Available Technologies from the Technology Transfer Center.',
 		filters:
 			'field_govdelivery:true AND field_ics:NCI AND (field_applications:"Medical Devices" OR field_applications:"Non-Medical Devices")',
-		link: 'https://techtransfer.cancer.gov/rss/medical_devices.xml',
+		channelLink: '/rss/medical_devices.xml',
+		itemLink: '/available-technologies?abstract=',
 		xmlFilename: 'medical_devices',
 	},
 	{
@@ -12,7 +13,8 @@ const rss = [
 		description: 'Available Technologies from the Technology Transfer Center.',
 		filters:
 			'field_govdelivery:true AND field_ics:NCI AND (field_applications:Diagnostics)',
-		link: 'https://techtransfer.cancer.gov/rss/diagnostics.xml',
+		channelLink: '/rss/diagnostics.xml',
+		itemLink: '/available-technologies?abstract=',
 		xmlFilename: 'diagnostics',
 	},
 	{
@@ -20,7 +22,8 @@ const rss = [
 		description: 'Available Technologies from the Technology Transfer Center.',
 		filters:
 			'field_govdelivery:true AND field_ics:NCI AND (field_applications:"Research Materials")',
-		link: 'https://techtransfer.cancer.gov/rss/research_materials.xml',
+		channelLink: '/rss/research_materials.xml',
+		itemLink: '/available-technologies?abstract=',
 		xmlFilename: 'research_materials',
 	},
 	{
@@ -28,7 +31,8 @@ const rss = [
 		description: 'Available Technologies from the Technology Transfer Center.',
 		filters:
 			'field_govdelivery:true AND field_ics:NCI AND (field_applications:Therapeutics)',
-		link: 'https://techtransfer.cancer.gov/rss/therapeutics.xml',
+		channelLink: '/rss/therapeutics.xml',
+		itemLink: '/available-technologies?abstract=',
 		xmlFilename: 'therapeutics',
 	},
 	{
@@ -36,7 +40,8 @@ const rss = [
 		description: 'Available Technologies from the Technology Transfer Center.',
 		filters:
 			'field_govdelivery:true AND field_ics:NCI AND (field_applications:"Software / Apps")',
-		link: 'https://techtransfer.cancer.gov/rss/software_and_apps.xml',
+		channelLink: '/rss/software_and_apps.xml',
+		itemLink: '/available-technologies?abstract=',
 		xmlFilename: 'software_and_apps',
 	},
 	{
@@ -44,7 +49,8 @@ const rss = [
 		description: 'Available Technologies from the Technology Transfer Center.',
 		filters:
 			'field_govdelivery:true AND field_ics:NCI AND (field_applications:Vaccines)',
-		link: 'https://techtransfer.cancer.gov/rss/vaccines.xml',
+		channelLink: '/rss/vaccines.xml',
+		itemLink: '/available-technologies?abstract=',
 		xmlFilename: 'vaccines',
 	},
 ];
