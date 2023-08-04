@@ -1,4 +1,7 @@
-// all configuration is kept in the rss-files-config.js
+// some random environment stuff is in .env
+require('dotenv').config();
+
+// all channels configuration is kept in the rss-files-config.js
 // so go there if you want to add a new RSS file to process
 const rssFiles = require('./rss-files-config.js');
 

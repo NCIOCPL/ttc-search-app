@@ -16,7 +16,9 @@ async function createSitemap(hits) {
 			.node('url')
 			.node(
 				'loc',
-				'https://techtransfer.cancer.gov/_abstract/abstract/' +
+				'https://' +
+					process.env.DOMAIN +
+					'/_abstract/abstract/' +
 					hit.field_data_source_id
 			)
 			.parent();

@@ -1,7 +1,6 @@
 const generateStaticFiles = require('../generateStaticFiles');
 const mock = require('mock-fs');
 const { promises } = require('fs');
-const libxmljs = require('libxmljs');
 const algoliasearch = require('algoliasearch');
 const mockSearchResults = require('./__fixtures__/api-results.json');
 

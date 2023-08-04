@@ -1,15 +1,4 @@
 const Netstorage = require('netstorageapi');
-const fs = require('fs');
-
-async function readConfigFile(filePath) {
-	try {
-		const configContent = fs.readFileSync(filePath, 'utf8');
-		return JSON.parse(configContent);
-	} catch (error) {
-		console.error('Error reading config file:', error);
-		throw error; // Rethrow the error to propagate it to the caller
-	}
-}
 
 function uploadWithStatus(config, local_source) {
 	return new Promise((resolve, reject) => {
@@ -36,23 +25,22 @@ function uploadWithStatus(config, local_source) {
 }
 
 async function netStorageUpload(local_source) {
-	let config = {};
+	let config = {
+		hostname: process.env.AKAMAI_HOSTNAME,
+		keyName: process.env.AKAMAI_KEYNAME,
+		key: process.env.AKAMAI_KEY,
+		cpCode: process.env.AKAMAI_CPCODE,
+		ssl: true,
+	};
+
 	try {
-		config = await readConfigFile('akamai-config.json');
+		const uploadStatus = await uploadWithStatus(config, local_source);
+
+		console.log(uploadStatus);
+		return uploadStatus;
 	} catch (error) {
-		console.error('Error obtaining config, skipping upload');
-	}
-
-	if (Object.keys(config).length !== 0) {
-		try {
-			const uploadStatus = await uploadWithStatus(config, local_source);
-
-			console.log(uploadStatus);
-			return uploadStatus;
-		} catch (error) {
-			console.error('Error during upload:', error);
-			throw error;
-		}
+		console.error('Error during upload:', error);
+		throw error;
 	}
 }
 
