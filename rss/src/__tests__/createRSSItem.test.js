@@ -12,7 +12,7 @@ describe('Create RSS Item', () => {
 		const item = await rssItem(result, url, doc);
 		expect(item.get('/root/channel/item/title').text()).toEqual(result.title);
 		expect(item.get('/root/channel/item/link').text()).toEqual(
-			'http://techtransfer.cancer.gov' + url + result.field_id
+			'https://' + process.env.DOMAIN + url + result.field_id
 		);
 		expect(item.get('/root/channel/item/description').text()).toEqual(
 			result.body

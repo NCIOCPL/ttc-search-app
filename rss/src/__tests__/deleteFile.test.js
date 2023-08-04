@@ -16,7 +16,7 @@ describe('Delete file', () => {
 		await deleteFile('public/some-file.txt');
 		let result = false;
 		try {
-			stat = await promises.stat('public/some-file.txt');
+			await promises.stat('public/some-file.txt');
 		} catch (error) {
 			if (error.code === 'ENOENT') {
 				result = true;

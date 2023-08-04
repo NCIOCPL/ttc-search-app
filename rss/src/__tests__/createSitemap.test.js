@@ -1,4 +1,3 @@
-var libxmljs = require('libxmljs');
 const createSitemap = require('../createSitemap');
 const mockSearchResults = require('./__fixtures__/api-results.json');
 

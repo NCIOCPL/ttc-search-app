@@ -16,7 +16,7 @@ async function generateRSSFile(rssFile) {
 
 	await writeRSSFile(
 		libxmljs.parseXml(doc.toString()),
-		rssFile.xmlFilename + '.xml',
+		xmlFilename + '.xml',
 		'public/rss'
 	);
 }

@@ -57,7 +57,9 @@ describe('Generate RSS File', () => {
 		expect(doc.get('/rss/channel/description').text()).toBe(
 			rssFile.description
 		);
-		expect(doc.get('/rss/channel/link').text()).toBe('https://techtransfer.cancer.gov' + rssFile.channelLink);
+		expect(doc.get('/rss/channel/link').text()).toBe(
+			'https://' + process.env.DOMAIN + rssFile.channelLink
+		);
 	});
 
 	test.each(hits)('Check if result is in XML', async (hit) => {

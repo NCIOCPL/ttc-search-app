@@ -1,6 +1,11 @@
 var libxmljs = require('libxmljs');
 
-async function createRSSchannel(title, description, channelLink, search_api_language) {
+async function createRSSchannel(
+	title,
+	description,
+	channelLink,
+	search_api_language
+) {
 	var doc = new libxmljs.Document();
 
 	// creating xml
@@ -8,8 +13,7 @@ async function createRSSchannel(title, description, channelLink, search_api_lang
 		.node('rss')
 		.attr({
 			version: '2.0',
-			'xml:base':
-				'https://techtransfer.cancer.gov/rss/diagnostics/abstracts.xml',
+			'xml:base': 'https://' + process.env.DOMAIN + channelLink,
 			'xmlns:dc': 'http://purl.org/dc/elements/1.1/',
 			'xmlns:atom': 'http://www.w3.org/2005/Atom',
 			'xmlns:content': 'http://purl.org/rss/1.0/modules/content/',
@@ -24,7 +28,7 @@ async function createRSSchannel(title, description, channelLink, search_api_lang
 		.node('channel')
 		.node('title', title)
 		.parent()
-		.node('link', 'https://techtransfer.cancer.gov' + channelLink)
+		.node('link', 'https://' + process.env.DOMAIN + channelLink)
 		.parent()
 		.node('description', description)
 		.parent()
@@ -32,7 +36,7 @@ async function createRSSchannel(title, description, channelLink, search_api_lang
 		.parent()
 		.node('atom:link')
 		.attr({
-			href: 'https://techtransfer.cancer.gov' + channelLink,
+			href: 'https://' + process.env.DOMAIN + channelLink,
 			rel: 'self',
 			type: 'application/rss+xml',
 		});

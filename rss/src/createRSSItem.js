@@ -7,7 +7,7 @@ async function createRSSItem(result, itemLink, doc) {
 		.node('item')
 		.node('title', result.title)
 		.parent()
-		.node('link', 'http://techtransfer.cancer.gov' + itemLink + result.field_id)
+		.node('link', 'https://' + process.env.DOMAIN + itemLink + result.field_id)
 		.parent()
 		.node('description', result.body)
 		.parent()

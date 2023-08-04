@@ -13,6 +13,7 @@
 	"dependencies": {
 		"adm-zip": "^0.5.10",
 		"algoliasearch": "^4.15.0",
+		"dotenv": "^16.3.1",
 		"libxmljs": "^1.0.9",
 		"netstorageapi": "git://github.com/nciocpl/NetStorageKit-Node.git#zipfile-upload-fix"
 	},
