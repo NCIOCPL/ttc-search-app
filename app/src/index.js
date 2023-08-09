@@ -66,7 +66,6 @@ const initialize = ({
 		sort: true,  // hide sort by dropdown
 		pager: true,
 		hitsPerPage: 25,
-		filter: 'field_ics:NCI',  // Limit to NCI abstracts
 		searchResultTemplate:\`
 				<article class="{{ type }}">
 				<p class="'title'">
