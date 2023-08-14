@@ -1,0 +1,27 @@
+name: Build, Test, and Deploy
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - 'hotfix/**'
+      - 'release/**'
+      - 'feature/**'
+      - 'prototype/**'
+    tags:
+      - '*'
+    paths: app/**
+  pull_request:
+    paths: app/**
+
+#cancel previous runs for this ref
+concurrency:
+  group: ${{ github.ref }}-app
+  cancel-in-progress: true
+
+jobs:
+  react-app-workflow:
+    uses: nciocpl/cgov-react-app-playground/.github/workflows/workflow.yml@workflow/v2
+    secrets: inherit
+    with:
+      app_path: 'app/'

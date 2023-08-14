@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { merge } = require('webpack-merge');
 const paths = require('./paths');
 const common = require('./webpack.common.js');
@@ -12,9 +13,7 @@ module.exports = merge(common, {
 		// NOTE: The env var will be using by the github workflow. IDK why you would do
 		// anything else with the production build outside of that, so we will leave the
 		// default path /.
-		publicPath: process.env.EXAMPLE_SITE_PUBLIC_PATH
-			? process.env.EXAMPLE_SITE_PUBLIC_PATH
-			: '/',
+		publicPath: process.env.PUBLIC_URL ? process.env.PUBLIC_URL : '/',
 		filename: 'js/[name].[contenthash].bundle.js',
 	},
 	module: {
@@ -40,6 +39,24 @@ module.exports = merge(common, {
 					},
 				],
 			},
+			{
+				test: /\.html$/,
+				use: [
+					{
+						loader: 'html-loader',
+						options: {
+							minimize: true,
+						},
+					},
+					{
+						loader: 'string-replace-loader',
+						options: {
+							search: '__PUBLIC_URL__',
+							replace: process.env.PUBLIC_URL ? process.env.PUBLIC_URL : '/',
+						},
+					},
+				],
+			},
 		],
 	},
 	plugins: [
@@ -55,9 +72,9 @@ module.exports = merge(common, {
 	optimization: {
 		minimize: true,
 		minimizer: [new CssMinimizerPlugin(), '...'],
-		runtimeChunk: {
+		/*runtimeChunk: {
 			name: 'runtime',
-		},
+		},*/
 	},
 	performance: {
 		hints: false,

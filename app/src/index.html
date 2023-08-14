@@ -1,14 +1,102 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>The meta title</title>
-	</head>
-	<body>
-		<h1>This is the title</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquet dui in dui malesuada molestie. Nunc in suscipit dui. Donec consectetur nulla tempus dui fermentum consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam vitae nunc sapien. Nullam efficitur odio ac massa vestibulum cursus. Aliquam sodales et libero ut elementum. In hac habitasse platea dictumst. Ut dignissim nisl nisi, id tempus nunc tincidunt eu. Sed in sagittis felis. Phasellus sagittis nibh ac tincidunt aliquet. Nulla non odio hendrerit, tincidunt quam in, consectetur magna. Vivamus turpis leo, varius non sagittis eu, iaculis et velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer ullamcorper faucibus lectus, ac elementum sapien efficitur quis.</p>
-		<p>Curabitur luctus aliquet odio ut pharetra. Ut lacus augue, dictum in hendrerit non, blandit sit amet lorem. Morbi non iaculis nisi. Sed orci est, tincidunt at enim ut, varius facilisis nulla. Nullam posuere porttitor rhoncus. Nullam lobortis augue pharetra nisi mollis, non posuere elit pharetra. Vestibulum at dictum quam. Nam vel purus mattis, fringilla turpis et, iaculis magna. Nam venenatis consequat ligula, quis vehicula eros lobortis eget. Nunc et placerat neque, ut sollicitudin nunc. Nullam in volutpat felis. Praesent sodales elit in tortor imperdiet posuere.</p>
-		<p>Sed quis ante commodo, porta erat consectetur, molestie diam. Praesent nec ligula at felis cursus ultrices. Quisque ac eleifend mi, id viverra orci. Proin interdum nibh odio, fringilla venenatis erat accumsan nec. Suspendisse potenti. Nunc in lectus ligula. In condimentum fermentum ullamcorper.</p>
-		<p>Quisque at turpis ac libero tempus volutpat id facilisis nulla. Pellentesque luctus viverra massa, in vestibulum nunc venenatis eu. Integer egestas sodales sem, vel tempor odio sodales non. Donec quis sem sit amet mauris efficitur sodales. Proin mattis commodo ipsum, id placerat erat efficitur non. Curabitur dui leo, elementum ac enim id, iaculis sagittis nibh. Sed consequat interdum neque eget blandit. Fusce nulla urna, tempus nec felis ultricies, vehicula porttitor ligula. Mauris euismod hendrerit neque in semper. In aliquet est eu dolor consequat commodo. Curabitur feugiat venenatis diam, non consequat lorem semper vitae.</p>
-		<p>Aliquam vitae scelerisque neque. Duis et ornare ipsum, non pharetra nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam scelerisque id sem rutrum sodales. Phasellus aliquet ligula non tincidunt mollis. In lectus risus, iaculis eget faucibus in, blandit sed magna. Sed accumsan bibendum ex sit amet vulputate. Aenean pretium tellus sed dapibus placerat. Vestibulum posuere molestie erat quis venenatis. Donec a ullamcorper ex. Nullam ipsum augue, lobortis sed nulla a, tempus egestas enim. Phasellus ex diam, pulvinar id odio at, posuere posuere mi.</p>
-	</body>
+
+<head>
+	<title>TTC Abstract Search</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+		rel="stylesheet"/>
+	<link
+		rel="stylesheet"
+		media="all"
+		href="https://www.cancer.gov/sites/g/files/xnrzdm211/files/css/css_Sl4LRMNAKgKC73I4WttbKaFTfRNzrtOxiNi3J1AifR8.css"
+	/>
+	<link
+		rel="stylesheet"
+		media="all"
+		href="https://www.cancer.gov/profiles/custom/cgov_site/themes/custom/ncids_trans/dist/css/ncids-common.css?rt16kk"
+	/>
+	<link
+		rel="stylesheet"
+		media="all"
+		href="https://www.cancer.gov/profiles/custom/cgov_site/themes/custom/ncids_trans/dist/css/app-module.css?rt16kk"
+	/>
+</head>
+
+<body>
+	<div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+		<div class="grid-container">
+			<div class="grid-row flex-no-wrap">
+				<div class="grid-col-10">
+					<nav
+						class="usa-breadcrumb usa-breadcrumb--wrap"
+						aria-label="Breadcrumbs"
+					>
+						<ol class="usa-breadcrumb__list">
+							<li class="usa-breadcrumb__list-item">
+								<a href="/" class="usa-breadcrumb__link">
+									<span>Home</span>
+								</a>
+							</li>
+							<li
+								class="usa-breadcrumb__list-item usa-current"
+								aria-current="page"
+							>
+								<span>TTC Abstract Search</span>
+							</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div id="page" class="grid-container">
+			<div class="grid-row grid-gap">
+				<div class="cgdpl grid-col-12">
+					<div id="content" class="">
+						<main class="contentzone has-section-nav" id="main-content">
+							<article>
+								<div class="resize-content">
+									<div data-testid="app-root" id="app-root"></div>
+								</div>
+							</article>
+						</main>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		(function () {
+			function sleep(ms) {
+				return new Promise((resolve) => setTimeout(resolve, ms));
+			}
+
+			async function loadAfterScript(cb) {
+				while (typeof TTCSearchApp !== 'function') {
+					console.log('waiting');
+					await sleep(10);
+				}
+				cb();
+			}
+
+			// if you update this
+			// don't forget to update the test params
+			const ttcParams = {
+				rootId: 'app-root',
+				basePath: '__PUBLIC_URL__',
+				searchKey: 'abstract',
+				src: 'https://www.techtransfer.nih.gov/modules/custom/nih_algolia/js/ott-search.js',
+				title: 'Available Technologies'
+			}
+
+			/* It takes a few millisocends for the webpack script to load and this must wait until that is done */
+			loadAfterScript(function () {
+				window.TTCSearchApp(ttcParams);
+			});
+		})();
+	</script>
+</body>
+
 </html>
