@@ -30,6 +30,7 @@ backstop_data/html_report
 !.eslintrc.yaml
 !.cpplint
 !.npmrc
+!.npmignore
 !.nvmrc
 
 # === Rules for root dir ===

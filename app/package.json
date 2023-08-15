@@ -1,7 +1,11 @@
 {
-	"name": "ttc-search-app",
+	"name": "@nciocpl/ttc-search-app",
 	"version": "1.0.0",
 	"description": "Wrapper single-page application used to embed the NIH OTT technology search widget on a page.",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nciocpl/ttc-search-app.git"
+	},
 	"main": "index.js",
 	"scripts": {
 		"test": "jest",
@@ -15,6 +19,9 @@
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/nciocpl/ttc-search-app/issues"
+	},
 	"engines": {
 		"node": ">=16.0.0 <17.0.0",
 		"npm": ">=8.0.0 <9.0.0"
