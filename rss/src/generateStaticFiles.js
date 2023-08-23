@@ -5,7 +5,7 @@ const writeFile = require('./writeFile.js');
 const libxmljs = require('libxmljs');
 
 async function generateStaticFiles() {
-	const { hits } = await getOTTData('field_ics:NCI');
+	const { hits } = await getOTTData('field_data_source:NCI');
 
 	for (const hit of hits) {
 		const staticFile = await createStaticFile(hit);
