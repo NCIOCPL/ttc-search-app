@@ -1,6 +1,6 @@
 {
 	"name": "ttc-rss-feed-generator",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Generates static versions of the TTC RSS files and technology abstracts.",
 	"main": "index.js",
 	"scripts": {
