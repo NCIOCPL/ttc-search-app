@@ -94,30 +94,40 @@ const initialize = ({
 		});
 	} else {
 		// detail page settings
+		let hrefPath;
+
+		if (document.referrer.indexOf(basePath) == -1) {
+			hrefPath = basePath;
+		} else {
+			hrefPath =
+				basePath +
+				document.referrer.substring(
+					document.referrer.indexOf(basePath) + basePath.length
+				);
+		}
+
 		code = `
-		ottEmbedSettings = {
-			detailSelector: '.ott-embed',
-			detailParameter: '${searchKey}',
-			detailTitleTemplate: '\\\${title}',
-			detailBreadcrumbSelector: '.usa-breadcrumb__list',
-			detailBreadcrumbTemplate: \`
-				<li class="usa-breadcrumb__list-item">
-					<a href="/" class="usa-breadcrumb__link">
-						<span>Home</span>
-					</a>
-				</li>
-				<li class="usa-breadcrumb__list-item">
-					<a href="${basePath}${document.referrer.substring(
-			document.referrer.indexOf(basePath) + basePath.length
-		)}" class="usa-breadcrumb__link">
-						<span>${title}</span>
+			ottEmbedSettings = {
+				detailSelector: '.ott-embed',
+				detailParameter: '${searchKey}',
+				detailTitleTemplate: '\\\${title}',
+				detailBreadcrumbSelector: '.usa-breadcrumb__list',
+				detailBreadcrumbTemplate: \`
+					<li class="usa-breadcrumb__list-item">
+						<a href="/" class="usa-breadcrumb__link">
+							<span>Home</span>
 						</a>
 					</li>
-				<li class="usa-breadcrumb__list-item usa-current" aria-current="page">
-					<span>\\\${title}</span>
-				</li>
-				\`,
-		};`;
+					<li class="usa-breadcrumb__list-item">
+						<a href="${hrefPath}" class="usa-breadcrumb__link">
+							<span>${title}</span>
+							</a>
+						</li>
+					<li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+						<span>\\\${title}</span>
+					</li>
+					\`,
+			};`;
 
 		// _satellite is defined by the CMS
 		/* eslint-disable no-undef */
