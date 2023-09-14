@@ -3,7 +3,7 @@
 # To check why a specific file is ignored, run `git check-ignore -v <filepath>`.
 
 # === Don't commit your secrets ===
-.env
+.env*
 
 # === Rule for dotfiles ===
 # Ignore all dotfiles.
