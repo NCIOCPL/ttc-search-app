@@ -58,6 +58,11 @@ const initialize = ({
 		pageTitle.appendChild(document.createTextNode(title));
 		appRoot.appendChild(pageTitle);
 
+		function analyticsCallback() {
+			console.log("Custom Analytics code definition");
+			console.log(ottSettings);
+		}
+
 		// create search page settings
 		code = `
 		ottEmbedSettings = {
@@ -84,6 +89,7 @@ const initialize = ({
 				</p>
 				</article>
 				\`,
+		analytics_callback: ${analyticsCallback()},
 		};`;
 
 		// register the page launch
